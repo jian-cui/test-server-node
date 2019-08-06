@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "express": "^4.16.3"
+  },
+  "dependencies": {
+    "html2canvas-proxy": "^1.0.1"
   }
 }

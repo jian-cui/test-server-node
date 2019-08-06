@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+// const proxy = require('html2canvas-proxy');
 const express = require('express');
 const app = express();
 
@@ -11,6 +12,8 @@ const setting = JSON.parse(fs.readFileSync('./setting.json', 'utf8'));
 // });
 const root = path.resolve(__dirname, setting.filepath)
 app.use(express.static(root))
+
+// app.use('/', proxy())
 
 
 var server = app.listen(setting.port, function () {
